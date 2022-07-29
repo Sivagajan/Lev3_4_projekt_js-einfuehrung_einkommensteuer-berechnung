@@ -107,11 +107,9 @@ function berechnen1(){
     console.log('kirche ' + church)
 
     const split = splitting()
-    console.log('wieviele Personen' + split)
+    console.log('wieviele Personen ' + split)
 
-    let ayear = year()
-
-    console.log(fall1)
+    year()
 
     let y 
     let eSt
@@ -160,7 +158,6 @@ function berechnen1(){
     }else if(income <= fall4){
     
         eSt = (hWert3 * income) - hWert31
-        alert(eSt)
         let zZESt = Math.floor(eSt)
         zZESt += ' €'
         /*  const paragraph = document.createElement('p')
@@ -170,9 +167,7 @@ function berechnen1(){
     
     }else if(income > fall4)
     {
-        alert(hWert4,hWert41,income)
         eSt = (hWert4 * income) - hWert41
-        alert(eSt)
         let zZESt = Math.floor(eSt)
         zZESt += ' €  '
         /* const paragraph = document.createElement('p')
