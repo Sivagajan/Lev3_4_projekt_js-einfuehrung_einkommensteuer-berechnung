@@ -24,12 +24,18 @@
                         <option value="2022">2022</option>
                     </select>
                 </div>
-                <div class="einkommen">
-                    <label for="">Einkommen</label>
-                    <input type="text" id="einkommen">
-                    <label for="">€</label>
+                <div class="einkommenDiv" >
+                    <div>
+                        <label for="">Einkommen</label>
+                    </div>
+                    
+                    <div>
+                        <input type="text"id="einkommen">
+                    </div>
+                    
                 </div>
-                <div class="noSplitting">
+
+                <div class="splitting">
                     <label for="">für eine Person</label>
                     <input type="radio" id="einePerson" name="personen" value="1" >
                     <label for="">für zwei Personen</label>
@@ -40,7 +46,7 @@
                     <label for="">Kirchensteuer 9%</label>
                     <input type="checkbox" id="kirchenSteuer">
                 </div>
-                <div>
+                <div class="divBerechnen">
                     <button onclick="berechnen1()"> Berechnen </button>
                 </div>
             </form>

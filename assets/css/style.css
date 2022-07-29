@@ -7,12 +7,13 @@
     font-family: 'Karla';
 }
 
-label{
-    font-size: 20px;
-}
-
 body{
-    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header{
@@ -24,10 +25,71 @@ form{
     width: 500px;
     margin: 0 auto;
     line-height: 40px;
+    background-color: rgba(240, 255, 255, 0.526);
 }
 
+h1 { 
+    text-align: center; 
+    margin-bottom: 5vh; 
+    margin-top: 10vh; 
+} 
+
 input{
-    margin-right:5px ;
+    font-size: 20px;
+    text-align: end;
+}
+
+article { 
+    padding: 20px; 
+} 
+
+div { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-right: 20px;
+    margin-bottom: 5px; 
+} 
+
+.einkommenDiv{
+    margin-right: 0;
+}
+
+label { 
+    font-weight: 600; 
+    font-size: 20px;
+} 
+
+#jahr { 
+    text-align: right; 
+    width: 100px;
+    font-size: 20px;
+}  
+
+
+.submit { 
+    display: flex; 
+    justify-content: flex-end; 
+} 
+
+.divBerechnen{
+    margin-top: 30px;
+    justify-content: center;
+}
+
+button{
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.ergebnis{
+    height: 150px;
+    width: 200px;
+    font-size: 200%;
+    margin: 50px auto;
+    text-decoration:underline;
+    /* margin-left: 24vw;    */  /* auf dem mac sieht es lusstig aus unter vollbild */
+    /* transform: rotateZ(337deg) */
 }
 
 
