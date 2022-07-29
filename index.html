@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev3_4_projekt_js-einführung_einkommensteuer-berechnung </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Einkommensteuer Rechner</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="" onsubmit="return false">
+                <div class="steuerJahr">
+                    <label for="">Steuerjahr</label>
+                    <select name="jahr" id="jahr">
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+                <div class="einkommen">
+                    <label for="">Einkommen</label>
+                    <input type="text" id="einkommen">
+                    <label for="">€</label>
+                </div>
+                <div class="noSplitting">
+                    <label for="">für eine Person</label>
+                    <input type="radio" id="einePerson" name="personen" value="1" >
+                    <label for="">für zwei Personen</label>
+                    <input type="radio" id="zweiPersonen" name="personen" value="2">
+                </div>
+
+                <div class="kirchenSteuer">
+                    <label for="">Kirchensteuer 9%</label>
+                    <input type="checkbox" id="kirchenSteuer">
+                </div>
+                <div>
+                    <button onclick="berechnen1()"> Berechnen </button>
+                </div>
+            </form>
+
+            <div id="ergebnis" class="ergebnis">
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
